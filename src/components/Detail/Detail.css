@@ -1,0 +1,18 @@
+/* Detail공통 CSS Start */
+.DetailBox {
+    border: 2px solid white;
+    border-radius: 10px 10px 0 0;
+    margin: 0 20px;
+    position: relative;
+    top: -2px;
+    height: 90vh;
+    padding: 15px 20px;
+}
+/* Detail공통 CSS End */
+/* AboutDetail Start */
+.MainIntro {
+    background-color: red;
+    display: flex;
+    margin: 10px;
+}
+/* AboutDetail End */
