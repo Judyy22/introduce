@@ -1,0 +1,62 @@
+/* CardPage Start */
+.cards {
+    padding: 0;
+    margin: 50px 10px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.cards:hover {
+    transform: scale(1.2);
+    transition: all 0.2s linear;
+    z-index: 2;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px rgba(231, 230, 230, 0.418);
+    cursor: pointer;
+}
+.cards:hover .cards-title > h2 {
+    font-size: 2rem;
+}
+.cards:hover .cards-title > div > div {
+    color: rgb(199, 194, 194);
+}
+.cards-view {
+    background: rgba(43, 41, 41, 0.904);
+    border-radius: 10px 10px 0px 0px;
+    height: 140px;
+    padding: 20px;
+}
+.cards:hover .cards-view {
+    border-radius: 10px;
+    height: 400px;
+    transition: all 0.5s linear;
+}
+.cards-overview {
+    /* white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden; */
+    opacity: 0;
+    margin-top: 10px;
+}
+
+.cards-overview > div:last-child {
+    border-top: 2px dashed white;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+
+.cards:hover .cards-overview {
+    opacity: 1;
+    transition: all 0.5s linear;
+    transition-delay: 0.1s;
+}
+
+/* CardPage End */
+/* Pagination Start */
+.pagination {
+    margin: 30px 60px;
+}
+/* Pagination End */
