@@ -1,4 +1,8 @@
 /* Detail공통 CSS Start */
+a {
+    text-decoration: none;
+    color: white;
+}
 .DetailBox {
     border: 2px solid white;
     border-radius: 10px 10px 0 0;
@@ -11,8 +15,129 @@
 /* Detail공통 CSS End */
 /* AboutDetail Start */
 .MainIntro {
-    background-color: red;
     display: flex;
     margin: 10px;
+    align-items: center;
+}
+.MainIntro > div:nth-child(2) {
+    margin: 0 20px;
+    padding-top: 55px;
+}
+
+.MainIntro img {
+    margin-right: 20px;
+}
+
+.MainIntro div:nth-child(2) div:nth-child(1) {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.MainIntro div:nth-child(2) div:nth-child(2) {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.MainIntro div:nth-child(2) div:nth-child(3) {
+    font-size: 16px;
+    color: #888;
+    display: flex;
+    align-items: center;
+}
+
+.MainIntro div:nth-child(2) div:nth-child(3) a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.OtherInfo {
+    margin-top: 40px;
+}
+
+.OtherInfo div:nth-child(1) {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.OtherInfo table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.OtherInfo th {
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.OtherInfo td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.DetailWork {
+    margin-top: 40px;
+}
+
+.DetailWork div:nth-child(1) {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.DetailWork table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.DetailWork th {
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.DetailWork td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.DetailWork td div {
+    margin-bottom: 5px;
+}
+
+.DetailSkills {
+    margin-top: 40px;
+}
+.DetailSkills > div:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.DetailSkills > div > div {
+    display: flex;
+    margin-top: 10px;
+}
+
+.DetailSkills > div > div > div > div {
+    display: flex;
+    margin-left: 20px;
+    border: 1px solid white;
+}
+.DetailSkills > div > div > div > div:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+.DetailSkills > div > div > div > div > div > img {
+    margin: 15px;
 }
 /* AboutDetail End */

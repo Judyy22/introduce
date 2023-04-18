@@ -22,7 +22,7 @@ const AboutDetail = () => {
                 </div>
             </div>
 
-            <div>
+            <div className="OtherInfo">
                 <div>학력사항 / 수료</div>
                 <table>
                     <thead>
@@ -55,7 +55,7 @@ const AboutDetail = () => {
                 </table>
             </div>
 
-            <div>
+            <div className="DetailWork">
                 <div>사회활동</div>
                 <table>
                     <thead>
@@ -80,40 +80,64 @@ const AboutDetail = () => {
                 </table>
             </div>
 
-            <div>
+            <div className="DetailSkills">
                 <div>Skills</div>
                 <div>
-                    <div>Design</div>
                     <div>
-                        <div>일러스트</div>
-                        <div>피그마</div>
+                        <div>
+                            <div>Design</div>
+                            <div>
+                                <div>
+                                    <img src="/pictures/ai.png" />
+                                </div>
+                                <div>
+                                    <img src="/pictures/figma.png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>Front-End</div>
+                            <div>
+                                <div>
+                                    <img src="/pictures/htmlcssjs.png" />
+                                </div>
+                                <div>
+                                    <img src="/pictures/react.png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>Back-End</div>
+                            <div>
+                                <div>
+                                    <img src="/pictures/java.png" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div>Front-End</div>
                     <div>
-                        <div>Html css js</div>
-                        <div>React</div>
-                    </div>
-                </div>
-                <div>
-                    <div>Back-End</div>
-                    <div>
-                        <div>java</div>
-                    </div>
-                </div>
-                <div>
-                    <div>DB</div>
-                    <div>
-                        <div>Oracle</div>
-                        <div>MySql</div>
-                    </div>
-                </div>
-                <div>
-                    <div>Code Editor</div>
-                    <div>
-                        <div>VS Code</div>
-                        <div>Eclipse</div>
+                        <div>
+                            <div>DB</div>
+                            <div>
+                                <div>
+                                    <img src="/pictures/oracle.png" />
+                                </div>
+                                <div>
+                                    <img src="/pictures/mysql.png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>Code Editor</div>
+                            <div>
+                                <div>
+                                    <img src="/pictures/vscode.png" />
+                                </div>
+                                <div>
+                                    <img src="/pictures/eclipse.png" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
