@@ -56,7 +56,45 @@
 
 /* CardPage End */
 /* Pagination Start */
+.pagingbox {
+    display: flex;
+    justify-content: center;
+}
 .pagination {
-    margin: 30px 60px;
+    margin: 20px 0;
+}
+
+.pagination ul {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination li button {
+    display: block;
+    text-align: center;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.pagination li button:hover {
+    background-color: #d1cfcf;
+    color: black;
+    cursor: pointer;
+}
+.pageItem > button {
+    background: none;
+    border: none;
+}
+.pagination li button:focus,
+.pageLink.active {
+    background-color: #fff;
+    color: black;
+    border: none;
+    font-weight: bold;
 }
 /* Pagination End */

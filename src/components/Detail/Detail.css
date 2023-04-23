@@ -146,6 +146,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    min-height: 80vh;
 }
 
 .Card {
@@ -157,3 +158,102 @@ a {
     border-radius: 5px;
 }
 /* PortfolioDetail Start */
+/* QnADetail Start */
+.talkBox {
+    overflow-y: auto;
+    width: 100%;
+    height: 1110px;
+}
+.talkBox::-webkit-scrollbar {
+    width: 10px;
+}
+
+.talkBox::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.talkBox::-webkit-scrollbar-track {
+    background-color: black;
+    border-radius: 10px;
+}
+
+.talkContents {
+    display: flex;
+}
+.Icon {
+    height: 100px;
+    width: 100px;
+}
+.balloon {
+    position: relative;
+    margin: 10px 25px;
+    width: 50%;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.balloon:before {
+    border-top: 15px solid white;
+    border-left: 15px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -15px;
+}
+.contents {
+    margin: 15px 20px;
+}
+.contents div {
+    color: black;
+}
+.AnswerBox {
+    display: flex;
+    justify-content: end;
+}
+.Answerballoon {
+    position: relative;
+    margin: 10px 25px;
+    width: 50%;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Answerballoon:before {
+    border-top: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid white;
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    right: -15px;
+}
+.dialog2 {
+    position: relative;
+    bottom: -1%;
+}
+.dialog3 {
+    position: relative;
+    bottom: -2%;
+}
+.dialog4 {
+    position: relative;
+    bottom: -3%;
+}
+.dialog5 {
+    position: relative;
+    bottom: -4%;
+}
+.dot {
+    opacity: 1;
+}
+.hide {
+    display: none;
+}
+.log {
+    display: block;
+}
+/* QnADetail End */

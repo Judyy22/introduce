@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Detail.css";
 import CardPage from "../DetailComponents/CardPage";
-import Pagination from "../DetailComponents/Pagination";
+import Paging from "../DetailComponents/Paging";
 
 const PortfolioDetail = () => {
     const [project, setProject] = useState([
@@ -111,7 +111,7 @@ const PortfolioDetail = () => {
                     <CardPage key={item.id} props={item} />
                 ))}
             </div>
-            <Pagination
+            <Paging
                 postsPerPage={postsPerPage}
                 totalPosts={project.length}
                 paginate={paginate}

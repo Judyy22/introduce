@@ -3,7 +3,6 @@ import "./DetailComponents.css";
 
 const CardPage = (props) => {
     const item = props.props;
-    console.log(item);
     return (
         <a
             href={item.link}

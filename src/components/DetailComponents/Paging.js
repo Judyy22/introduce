@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Button } from "react-bootstrap";
 
-const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
+const Paging = ({ postsPerPage, totalPosts, paginate }) => {
     const [currentPage, setCurrentPage] = useState(1);
 
     const pageNumbers = [];
@@ -13,14 +12,13 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
         setCurrentPage(pageNumber);
         paginate(pageNumber);
     };
-
     return (
-        <nav>
+        <nav className="pagingbox">
             <ul className="pagination">
                 {pageNumbers.map((number) => (
-                    <li key={number} className="page-item">
+                    <li key={number} className="pageItem">
                         <button
-                            className={`page-link ${
+                            className={`pageLink ${
                                 currentPage === number ? "active" : ""
                             }`}
                             onClick={() => handleClick(number)}
@@ -34,4 +32,4 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
     );
 };
 
-export default Pagination;
+export default Paging;
